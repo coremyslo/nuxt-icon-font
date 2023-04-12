@@ -14,16 +14,16 @@ Nuxt icon font generator
 ---
 
 ## Features
-- Watches specified folder (and sub-folders) with SVG icons and generates fonts on change
-- Optimizes SVG files via [SVGO](https://www.npmjs.com/package/svgo)
-- Manual or [browserslist](https://www.npmjs.com/package/browserslist) based auto-detection  of font formats to generate
-- Generates and injects custom properties (variables) with icon codes into pages, where SVG file name is used as a variable name
-- Detects and generates the most popular font format as base64 to reduce page jump effect
+- 🕵️‍♂️&nbsp;Watches specified folder (and sub-folders) with SVG icons and generates fonts on change
+- 💅&nbsp;Optimizes SVG files via [SVGO](https://www.npmjs.com/package/svgo)
+- 🤯&nbsp;Manual or [browserslist](https://www.npmjs.com/package/browserslist) based auto-detection  of font formats to generate
+- 🏗️&nbsp;Generates and injects custom properties (variables) with icon codes into pages, where SVG file name is used as a variable name
+- ❤️&nbsp;Detects and generates the most popular font format as base64 to reduce page jump effect
 
 ## Usage
 ``` html
 <template>
-  <a>Some link</a>
+  <a>I'm a link with icon!</a>
 </template>
 <style scoped lang="scss">
   a {
@@ -35,7 +35,7 @@ Nuxt icon font generator
 </style>
 ```
 
-![](playground/assets/icon-font/home.svg) Some link
+![](playground/assets/icon-font/home.svg) I'm a link with icon!
 
 
 ## Setup
