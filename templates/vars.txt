@@ -1,4 +1,0 @@
-:root {
-  ${[...state.icons.keys()].map((name, i) => `--${state.toCase[state.options.case](`${state.options.name}-${name}`)}: "\\${(Number(state.options.unicode) + i).toString(16)}";
-  `).join('')}
-}

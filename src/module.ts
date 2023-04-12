@@ -55,8 +55,16 @@ export default defineNuxtModule<ModuleOptions>({
 
     const assetGenerator = new AssetGenerator({
       assets: [
-        resolve(nuxt.options.workspaceDir, "templates/vars.txt"),
-        resolve(nuxt.options.workspaceDir, "templates/font-face.txt")
+        ":root {\n" +
+        "  ${[...state.icons.keys()].map((name, i) => `--${state.toCase[state.options.case](`${state.options.name}-${name}`)}: \"\\\\${(Number(state.options.unicode) + i).toString(16)}\";\n" +
+        "  `).join('')}\n" +
+        "}\n",
+        "@font-face {\n" +
+        "  font-family: \"${state.options.name}\";\n" +
+        "  ${state.fontFaceSrc};\n" +
+        "  font-weight: normal;\n" +
+        "  font-style: normal;\n" +
+        "}\n"
       ]
     })
     await assetGenerator.read();
