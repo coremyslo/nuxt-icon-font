@@ -55,8 +55,8 @@ export default defineNuxtModule<ModuleOptions>({
 
     const assetGenerator = new AssetGenerator({
       assets: [
-        resolve(nuxt.options.workspaceDir, "templates/vars.css"),
-        resolve(nuxt.options.workspaceDir, "templates/font-face.css")
+        resolve(nuxt.options.workspaceDir, "templates/vars.txt"),
+        resolve(nuxt.options.workspaceDir, "templates/font-face.txt")
       ]
     })
     await assetGenerator.read();
