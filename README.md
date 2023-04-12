@@ -34,8 +34,7 @@ Nuxt icon font generator
   }
 </style>
 ```
-
-![](playground/assets/icon-font/home.svg) I'm a link with icon!
+![](playground/assets/icon-font/house.svg) I'm a link with icon!
 
 
 ## Setup

@@ -2,14 +2,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <defs>
-  <font id="icon-font" horiz-adv-x="1024">
+  <font id="icon-font" horiz-adv-x="1152">
     <font-face font-family="icon-font"
       units-per-em="1024" ascent="1024"
       descent="0" />
     <missing-glyph horiz-adv-x="0" />
-    <glyph glyph-name="home"
+    <glyph glyph-name="house"
       unicode="&#xE900;"
-      horiz-adv-x="1024" d="M171 4122V4634L512 4890L853 4634V4122H597V4420H427V4122H171z" />
+      horiz-adv-x="1152" d="M1152 513C1152 477 1122 449 1088 449L1024 449L1025 128C1025 123 1025 118 1024 112L1024 80C1024 36 988 0 944 0L912 0C910 0 908 0 905 0C903 0 900 0 897 0L832 0L784 0C740 0 704 36 704 80L704 128L704 256C704 291 675 320 640 320L512 320C477 320 448 291 448 256L448 128L448 80C448 36 412 0 368 0L320 0L256 0C253 0 250 0 247 0C245 0 242 0 240 0L208 0C164 0 128 36 128 80L128 304C128 306 128 308 128 310L128 449L64 449C28 449 0 477 0 513C0 531 6 547 20 561L533 1008C547 1022 563 1024 577 1024C591 1024 607 1020 619 1010L1130 561C1146 547 1154 531 1152 513z" />
   </font>
 </defs>
 </svg>

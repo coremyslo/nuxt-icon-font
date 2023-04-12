@@ -42,7 +42,7 @@ export default defineNuxtModule<ModuleOptions>({
     const sourceDirPath = resolve(nuxt.options.rootDir, options.sourceDirPath);
     const targetDirPath = resolve(nuxt.options.rootDir, "public" ,options.targetDirPath);
 
-    const iconGenerator= new IconGenerator(sourceDirPath);
+    const iconGenerator= new IconGenerator(sourceDirPath, {optimize: false});
     await iconGenerator.read();
 
     const fontGenerator= new FontGenerator({
