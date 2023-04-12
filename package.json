@@ -1,6 +1,6 @@
 {
   "name": "@coremyslo/nuxt-icon-font",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Nuxt icon font generator",
   "repository": {
     "type": "git",

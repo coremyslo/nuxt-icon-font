@@ -314,9 +314,9 @@
     fast-glob "^3.2.12"
 
 "@coremyslo/svg-to-icon@^1.0.0":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@coremyslo/svg-to-icon/-/svg-to-icon-1.0.2.tgz#e498d70d35a5e9faf2b7b2c4f4185e1b7e60f579"
-  integrity sha512-YyfYcfniXoc7CMsyJMCUomaiHDccGrEqS+LfwLdZJjzLrLeCh9JfS8ImpGnVPj734TfqPuEdCMTPyfF0e9y2FA==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@coremyslo/svg-to-icon/-/svg-to-icon-1.1.0.tgz#cd066cb845a102ed40b8c9f1b08ae3106b2d4429"
+  integrity sha512-u9bWeg8f+2cO9uWugFPR9L3zS4/lizGO+jQnXxcSnc7wECjfMs+ZCLVfzofPPEZNpvEwFAdcz/DTE8NenkPUlA==
   dependencies:
     case "^1.6.3"
     is-svg "^4.3.2"
@@ -770,9 +770,9 @@
     slash "^4.0.0"
 
 "@rollup/plugin-commonjs@^24.0.1":
-  version "24.0.1"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-24.0.1.tgz#d54ba26a3e3c495dc332bd27a81f7e9e2df46f90"
-  integrity sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==
+  version "24.1.0"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-24.1.0.tgz#79e54bd83bb64396761431eee6c44152ef322100"
+  integrity sha512-eSL45hjhCWI0jCCXcNtLVqM5N1JlBGvlFfY0m6oOYnLCJ6N0qEXoZql4sY2MOUArzhH4SA/qBpTxvvZp2Sc+DQ==
   dependencies:
     "@rollup/pluginutils" "^5.0.1"
     commondir "^1.0.1"
@@ -1625,9 +1625,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001449, caniuse-lite@^1.0.30001464:
-  version "1.0.30001477"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001477.tgz#a2ffb2276258233034bbb869d4558b02658a511e"
-  integrity sha512-lZim4iUHhGcy5p+Ri/G7m84hJwncj+Kz7S5aD4hoQfslKZJgt0tHc/hafVbqHC5bbhHb+mrW2JOUHkI5KH7toQ==
+  version "1.0.30001478"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001478.tgz#0ef8a1cf8b16be47a0f9fc4ecfc952232724b32a"
+  integrity sha512-gMhDyXGItTHipJj2ApIvR+iVB5hd0KP3svMWWXDvZOmjzJJassGLMfxRkQCSYgGd2gtdL/ReeiyvMSFD1Ss6Mw==
 
 case@^1.6.3:
   version "1.6.3"
@@ -2228,9 +2228,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.358"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.358.tgz#301afde62c1bbe36aeec3155b11f7db1c5b01c78"
-  integrity sha512-dbqpWy662dGVwq27q8i6+t5FPcQiFPs/VExXJ+/T9Xp9KUV0b5bvG+B/i07FNNr7PgcN3GhZQCZoYJ9EUfnIOg==
+  version "1.4.360"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.360.tgz#7a24cf81588d6af82ab17d77715cdc09dacfafb2"
+  integrity sha512-EP/jdF15S+l3iSSzgUpUqeazvkbVFXNuVxwwLMVUSie3lUeH1HH70gKe0IS7TASB/0h5QPG2bLMzv2jelSztIQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4027,9 +4027,11 @@ nuxt@^3.3.3:
     vue-router "^4.1.6"
 
 nypm@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/nypm/-/nypm-0.1.0.tgz#100c832df490d06e6ee4a3723a3f4bbe8b2caeba"
-  integrity sha512-q+/Hl9SWeLsH5moeaZEZFFYqmosoCYN/WU4vckznuCEw95EBG/z4NT1eOkABhh3pvQdHkc3QsiBWHBfIGptBMw==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/nypm/-/nypm-0.1.1.tgz#512865979a45d5be2399a6ed835584e74b99f571"
+  integrity sha512-rklj6nA+gKsU5GBr+8vLcIc9Qqq4iYrMKbxyHDAnnyfNDwCVGltKGBZq31fTDwo1UBKiOVpTf7/awSNVcWHHFw==
+  dependencies:
+    execa "^7.1.1"
 
 object-assign@^4.1.1:
   version "4.1.1"
