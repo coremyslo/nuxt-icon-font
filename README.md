@@ -28,7 +28,7 @@ Nuxt icon font generator
 <style scoped lang="scss">
   a {
     &:before {
-      content: var(--icon-font-home);
+      content: var(--icon-font-house);
       font-family: "icon-font";
     }
   }
