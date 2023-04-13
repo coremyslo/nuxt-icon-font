@@ -145,6 +145,9 @@ export default defineNuxtModule<ModuleOptions>({
       if (event === "unlink") {
         await iconGenerator.delete(resolve(nuxt.options.rootDir, path));
       }
+      if (event === "change") {
+        await iconGenerator.update(resolve(nuxt.options.rootDir, path));
+      }
       clearTimeout(timeout);
       timeout = setTimeout(async () => {
         await fontGenerator.generate(iconGenerator.icons);
