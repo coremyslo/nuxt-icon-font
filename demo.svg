@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 189">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#fff" d="M0 0h600v189H0z"/>
+    <rect width="298" height="187.002" x="1" y="1" fill="#F8F8F8" stroke="#979797" stroke-width="2" rx="12"/>
+    <path fill="#000" fill-rule="nonzero" d="M13.5 60.5h3.75v-6.25h5.5v6.25h3.75v-9.75L20 45.875l-6.5 4.875v9.75ZM12 62V50l8-6 8 6v12h-6.75v-6.25h-2.5V62H12Z"/>
+    <path stroke="#979797" stroke-width="2" d="M0 32h300"/>
+    <circle cx="282.234" cy="16.92" r="5.768" fill="#FFF" stroke="#979797" stroke-width="2"/>
+    <circle cx="263.621" cy="16.92" r="5.768" fill="#FFF" stroke="#979797" stroke-width="2"/>
+    <circle cx="245.008" cy="16.92" r="5.768" fill="#FFF" stroke="#979797" stroke-width="2"/>
+    <text fill="#000" font-family="Helvetica" font-size="16">
+      <tspan x="36" y="60">I&apos;m a text with icon!</tspan>
+    </text>
+  </g>
+</svg>
