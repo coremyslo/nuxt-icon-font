@@ -23,10 +23,10 @@ Nuxt icon font generator
 ## Usage
 ``` html
 <template>
-  <a>I'm a link with icon!</a>
+  <p>I'm a text with icon!</p>
 </template>
 <style scoped lang="scss">
-  a {
+  p {
     &:before {
       content: var(--icon-font-house);
       font-family: "icon-font";
@@ -34,8 +34,9 @@ Nuxt icon font generator
   }
 </style>
 ```
-![](playground/assets/icon-font/house.svg) I'm a link with icon!
 
+---
+![](demo.svg) 
 
 ## Setup
 
