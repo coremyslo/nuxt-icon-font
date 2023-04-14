@@ -35,7 +35,6 @@ Nuxt icon font generator
 </style>
 ```
 
----
 ![](demo.svg) 
 
 ## Setup
