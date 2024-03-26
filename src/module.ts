@@ -1,3 +1,4 @@
+import { relative, resolve } from 'node:path'
 import { IconGenerator } from '@coremyslo/icon-generator';
 import { FontGenerator } from '@coremyslo/font-generator';
 import { AssetGenerator } from "@coremyslo/asset-generator";
@@ -136,6 +137,7 @@ export default defineNuxtModule<ModuleOptions>({
     let timeout: ReturnType<typeof setTimeout>;
 
     nuxt.hook("builder:watch", async (event, path) => {
+      path = relative(nuxt.options.srcDir, resolve(nuxt.options.srcDir, path))
       if (!path.includes(options.sourceDirPath || "") || !path.match(/\.(svg)$/)) {
         return;
       }
