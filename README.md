@@ -42,14 +42,7 @@ Nuxt icon font generator
 1. Add `@coremyslo/nuxt-icon-font` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D @coremyslo/nuxt-icon-font
-
-# Using yarn
-yarn add --dev @coremyslo/nuxt-icon-font
-
-# Using npm
-npm install --save-dev @coremyslo/nuxt-icon-font
+npx nuxi@latest module add icon-font
 ```
 
 2. Add `my-module` to the `modules` section of `nuxt.config.ts`
