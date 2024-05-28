@@ -40,7 +40,7 @@ export default defineNuxtModule<ModuleOptions>({
     const { resolve } = createResolver(import.meta.url)
 
     const sourceDirPath = resolve(nuxt.options.rootDir, options.sourceDirPath);
-    const targetDirPath = resolve(nuxt.options.rootDir, "public" ,options.targetDirPath);
+    const targetDirPath = resolve(nuxt.options.rootDir, nuxt.options.dir.public ,options.targetDirPath);
 
     const iconGenerator= new IconGenerator(sourceDirPath);
     await iconGenerator.read();
@@ -93,7 +93,7 @@ export default defineNuxtModule<ModuleOptions>({
       };
       options.formats.slice().reverse().forEach((value, index) => {
         const font = fontGenerator.fonts.get(value);
-        const url = `${targetDirPath}/${options.name}`.replace(/^.*\/public\//, "")
+        const url = `${targetDirPath}/${options.name}`.replace(new RegExp(`^.*\/${nuxt.options.dir.public}\/`), "");
         if (font) {
           if (index === 0) {
             if (value === "eot") {
