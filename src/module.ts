@@ -25,7 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: '@coremyslo/nuxt-icon-font',
     configKey: 'iconFont',
     compatibility: {
-      nuxt: '^3.0.0'
+      nuxt: '>=3.0.0'
     }
   },
   defaults: {
