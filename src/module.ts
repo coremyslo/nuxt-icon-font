@@ -10,6 +10,8 @@ import { Case } from "@coremyslo/icon-generator/dist/types";
 import toCase from "case";
 import { clearTimeout } from "timers";
 
+const formatOrder = ["eot", "woff2", "woff", "ttf", "svg"];
+
 export interface ModuleOptions {
   name: string,
   sourceDirPath: string,
@@ -40,6 +42,10 @@ export default defineNuxtModule<ModuleOptions>({
   async setup (options, nuxt) {
     // very weird merging of defaults. To investigate later
     options.formats = [...new Set(options.formats)];
+
+    options.formats.sort((a,b) => {
+      return formatOrder.indexOf(a) - formatOrder.indexOf(b)
+    })
 
     const { resolve } = createResolver(import.meta.url)
 
