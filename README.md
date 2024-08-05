@@ -68,8 +68,8 @@ export default defineNuxtConfig({
     targetDirPath: "icon-font",
     // font formats to generate, fallback to ["woff2"] in case browserslist is not used, example for manual configuration: ["svg", "ttf", "woff", "woff2", "eot"] in any order
     formats: getFontFormatsList(browserslist()),
-    // Support of generating the most popular font as base64
-    base64: false,
+    // Generates font in memory as "woff" and injects it as base64 to reduce page jump effect, ignores "formats" option
+    base64: true,
     // unicode symbol for first icon in iconfont (makes sense to change only if you're not going to use custom properties)
     unicode: "0xE900",
     // generated custom properties (variables) format. Other options are: "snake", "pascal", "camel", "header", "constant"

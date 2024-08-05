@@ -35,7 +35,7 @@ export default defineNuxtModule<ModuleOptions>({
     sourceDirPath: "assets/icon-font",
     targetDirPath: "icon-font",
     formats: getFontFormatsList(browserslist(), true),
-    base64: false,
+    base64: true,
     unicode: FontGenerator.optionsDefault.unicode,
     case: IconGenerator.optionsDefault.case,
   },
@@ -101,22 +101,24 @@ export default defineNuxtModule<ModuleOptions>({
           hash: "iefix",
         },
       };
-      options.formats.slice().reverse().forEach((value, index) => {
+      options.formats.slice().forEach((value, index) => {
         const font = fontGenerator.fonts.get(value);
         const url = `${targetDirPath}/${options.name}`.replace(new RegExp(`^.*\/${nuxt.options.dir.public}\/`), "");
         if (font) {
-          if (index === 0) {
-            if (value === "eot") {
-              text += `url('/${url}.eot?${font.uuid}');\n`;
-              text += "  src: ";
+          if (options.base64) {
+            if (value === "woff") {
+              const base64 = Buffer.from(font.value).toString("base64");
+              text += `url(data:${meta[value].data};charset=utf-8;base64,${base64}) format('${meta[value].format || value}')`;
             }
           } else {
-            text += ",\n     ";
-          }
-          if (options.base64 && options.formats[0] === value) {
-            const base64 = Buffer.from(font.value).toString("base64");
-            text += `url(data:${meta[value].data};charset=utf-8;base64,${base64}) format('${meta[value].format || value}')`;
-          } else {
+            if (index === 0) {
+              if (value === "eot") {
+                text += `url(/'${url}.eot?${font.uuid}');\n`;
+                text += "  src: ";
+              }
+            } else {
+              text += ",\n     ";
+            }
             text += `url('/${url}.${value}?${font.uuid}${meta[value].hash ? `#${meta[value].hash}` : ""}') format('${meta[value].format || value}')`;
           }
         }
