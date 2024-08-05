@@ -107,7 +107,7 @@ export default defineNuxtModule<ModuleOptions>({
         if (font) {
           if (index === 0) {
             if (value === "eot") {
-              text += `url('${url}.eot?${font.uuid}');\n`;
+              text += `url('/${url}.eot?${font.uuid}');\n`;
               text += "  src: ";
             }
           } else {
@@ -117,7 +117,7 @@ export default defineNuxtModule<ModuleOptions>({
             const base64 = Buffer.from(font.value).toString("base64");
             text += `url(data:${meta[value].data};charset=utf-8;base64,${base64}) format('${meta[value].format || value}')`;
           } else {
-            text += `url('${url}.${value}?${font.uuid}${meta[value].hash ? `#${meta[value].hash}` : ""}') format('${meta[value].format || value}')`;
+            text += `url('/${url}.${value}?${font.uuid}${meta[value].hash ? `#${meta[value].hash}` : ""}') format('${meta[value].format || value}')`;
           }
         }
       });
