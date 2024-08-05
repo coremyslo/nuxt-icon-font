@@ -38,6 +38,9 @@ export default defineNuxtModule<ModuleOptions>({
     case: IconGenerator.optionsDefault.case,
   },
   async setup (options, nuxt) {
+    // very weird merging of defaults. To investigate later
+    options.formats = [...new Set(options.formats)];
+
     const { resolve } = createResolver(import.meta.url)
 
     const sourceDirPath = resolve(nuxt.options.rootDir, options.sourceDirPath);
